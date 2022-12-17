@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'libre_baskervilleregular';
+    src: url('./assets/fonts/librebaskerville-regular-webfont.woff2') format('woff2'),
+         url('./assets/fonts/librebaskerville-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'libre_baskervillebold';
+    src: url('./assets/fonts/librebaskerville-bold-webfont.woff2') format('woff2'),
+         url('./assets/fonts/librebaskerville-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'libre_baskervilleitalic';
+    src: url('./assets/fonts/librebaskerville-italic-webfont.woff2') format('woff2'),
+         url('./assets/fonts/librebaskerville-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo-strip, .content {
+  display: flex;
+}
+
+.bg-container {
+  background-image: url(./assets/media/bg.jpg);
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 40vw;
+}
+
+.logo-strip {
+  background-color: rgb(0, 0, 0, .5);
+  justify-content: center;
+  align-items: center;
+  margin-top: 20vh;
+  height: auto;
+  padding: 1.5rem 0;
+  gap: 1rem;
+}
+
+.logo {
+  height: 5rem;
+}
+
+.logo-txt {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.content-form {
+  width: 60vw;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.content-header {
+  padding: 2rem 1rem;
+}
+
+.content-header > * {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+
