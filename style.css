@@ -19,6 +19,12 @@
 	font-style: normal;
 }
 
+:root {
+	--theme_main: #000207;
+	--theme_secondary: #ffffff09;
+	--theme_outlines: #fe92e7;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -36,15 +42,15 @@
 }
 
 .bg-container {
-	background-image: url(./assets/media/bg.jpg);
+	background-image: url(./assets/media/bg2.jpg);
 	background-position: center;
-	background-size: auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 	width: 40vw;
 }
 
 .logo-strip {
-	background-color: rgb(0, 0, 0, 0.5);
+	background-color: rgb(0, 0, 0, 0.8);
 	justify-content: center;
 	align-items: center;
 	margin-top: 20vh;
@@ -67,11 +73,17 @@
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: space-between;
+	background-color: var(--theme_main);
+}
+
+.container * {
+	color: #fff;
 }
 
 .content-form {
-	background-color: #eee;
+	background-color: var(--theme_secondary);
 	padding: 2rem 3rem;
+	box-shadow: 0px 10px 10px #ffffff15;
 }
 
 .content-form > form > p {
@@ -109,12 +121,28 @@
 
 .submit {
 	width: max-content;
-	padding: 1rem 4rem;
+	padding: 1rem 3.5rem;
 	margin-left: 3rem;
+	background-color: var(--theme_main);
+	border: 3px solid var(--theme_outlines);
+	border-radius: 0.5rem;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: var(--theme_outlines);
+}
+
+.submit:hover {
+  background-color: var(--theme_outlines);
+  color: var(--theme_main);
 }
 
 .login-prompt {
-  margin-left: 3rem;
-  margin-bottom: 2rem;
-  font-size: 1.5rem;
+	margin-left: 3rem;
+	margin-bottom: 2rem;
+	font-size: 1.5rem;
+}
+
+.emphasize {
+	color: var(--theme_outlines);
+	font-weight: 600;
 }
