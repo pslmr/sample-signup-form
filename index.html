@@ -11,48 +11,50 @@
 		<div class="content">
 			<div class="bg-container">
 				<div class="logo-strip">
-          <img src="./assets/media/odin-lined.png" alt="logo" class="logo">
-          <p>Porki</p>
-        </div>
+					<img src="./assets/media/odin-lined.png" alt="logo" class="logo" />
+					<p class="logo-txt">Porki</p>
+				</div>
 			</div>
 
 			<div class="container">
 				<div class="content-header">
-					<p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
-					<p>You know you want to.</p>
+					<p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+					<p>You <em>know</em> you want to.</p>
 				</div>
 
 				<div class="content-form">
 					<form action="" id="signup_form">
 						<p>Lets do this!</p>
-						<div>
-							<label for="fname">First Name</label>
-							<input type="text" id="fname" name="fname" />
-						</div>
-						<div>
-							<label for="lname">Last Name</label>
-							<input type="text" id="lname" name="lname" />
-						</div>
-						<div>
-							<label for="email">Email</label>
-							<input type="email" id="email" name="email" />
-						</div>
-						<div>
-							<label for="phone">Phone Number</label>
-							<input type="tel" id="phone" name="phone" />
-						</div>
-						<div>
-							<label for="pw">Password</label>
-							<input type="password" id="pw" name="pw" />
-						</div>
-						<div>
-							<label for="conf_pw">Confirm Password</label>
-							<input type="password" id="conf_pw" name="conf_pw" />
+						<div class="input-layout">
+							<div class="input">
+								<label for="fname">First Name</label>
+								<input type="text" id="fname" name="fname" />
+							</div>
+							<div class="input">
+								<label for="lname">Last Name</label>
+								<input type="text" id="lname" name="lname" />
+							</div>
+							<div class="input">
+								<label for="email">Email</label>
+								<input type="email" id="email" name="email" />
+							</div>
+							<div class="input">
+								<label for="phone">Phone Number</label>
+								<input type="tel" id="phone" name="phone" />
+							</div>
+							<div class="input">
+								<label for="pw">Password</label>
+								<input type="password" id="pw" name="pw" />
+							</div>
+							<div class="input">
+								<label for="conf_pw">Confirm Password</label>
+								<input type="password" id="conf_pw" name="conf_pw" />
+							</div>
 						</div>
 					</form>
-
-					<button type="submit" form="signup_form">Create Account</button>
 				</div>
+				<button type="submit" form="signup_form" class="submit">Create Account</button>
+				<p class="login-prompt">Already have an account? Log in</p>
 			</div>
 		</div>
 	</body>
